@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import axios from "axios"
 import "./App.css"
+import Cripto from "./Cripto"
 
 function App() {
 
@@ -21,16 +22,16 @@ function App() {
   if (!criptos) return <span>Cargando...</span>
 
   return (
-    <>
-      <h1>Lista de criptomonetas</h1>
-      <ol>
+    <div className="app-container">
+      <h1 className="title">EDmarket - Ranking de criptomonedas</h1>
+      <div className="cripto-container">
         {
-          criptos.map(({id, name, priceUsd}) => (
-            <li key={id}>Nombre: {name} Precio: {priceUsd}</li>
+          criptos.map(({id, name, priceUsd, changePercent24Hr}) => (
+            <Cripto key={id} name={name} priceUsd={priceUsd} change={changePercent24Hr} />
           )) 
         }
-      </ol>
-    </>
+      </div>
+    </div>
 
   )
 }
