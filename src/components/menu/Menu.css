@@ -1,3 +1,22 @@
+.main-menu {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.38);
+  padding: 1rem;
+  
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu li {
+  list-style: none;
+  margin-right: 2rem;
+
+}
+
 .main-menu a {
   color: white;
+  text-decoration: none;
 }
+

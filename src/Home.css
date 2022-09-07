@@ -1,0 +1,20 @@
+.home-container {
+  text-align: center;
+}
+
+.home-container .title {
+  margin-bottom: .5rem;
+}
+
+.home-container .subtitle {
+  margin-bottom: 2rem;
+  opacity: .5;
+}
+
+.home-container .link {
+  background: white;
+  text-decoration: none;
+  color: darkblue;
+  padding: 1rem;
+  border-radius: 8px;
+}
